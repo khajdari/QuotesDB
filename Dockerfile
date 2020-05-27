@@ -1,5 +1,3 @@
 FROM mysql
 
-ENV MYSQL_DATABASE CCP6418
-
-COPY QUOTES_DB /docker-entrypoint-initdb.d/
+COPY QuotesDB.sql /docker-entrypoint-initdb.d/
